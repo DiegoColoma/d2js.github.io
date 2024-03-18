@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/4_colores.js"></script>
+    <title>tecla</title>
+    <style>
+      #key {
+        background-color: white;
+          height: 200px;
+          width: 200px;
+          border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="key"></div>
+    <script>
+          let color;
+    document.addEventListener("keydown", cambiarColorPres);
+    function cambiarColorPres(event) {
+      let tecla = event.key;
+      if (tecla === "a") {
+        color = "pink";
+      } else if (tecla === "s") {
+        color = "orange";
+      } else if (tecla === "d") {
+        color = "cyan";
+      }
+      document.getElementById("key").style.backgroundColor = color;
+    }
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "q") {
+        NewDiv("purple");
+      } else if (event.key === "w") {
+        NewDiv("gray");
+      } else if (event.key === "e") {
+        NewDiv("brown");
+      }
+    });
+
+      function NewDiv(color) {
+      const divNew = document.createElement("div");
+      divNew.style.width = "200px";
+      divNew.style.height = "200px";
+      divNew.style.backgroundColor = color;
+
+      document.body.appendChild(divNew);
+    }
+    </script>
+  </body>
+</html>

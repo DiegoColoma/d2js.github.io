@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #blue {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin-bottom: 10px;
+      }
+      #red {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin-bottom: 10px;
+      }
+      #green {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        margin-bottom: 10px;
+      }
+      #yellow {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="blue"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="yellow"></div>
+
+    <script>
+      // Obtener los divs por su id
+      const blue = document.getElementById("blue");
+      const red = document.getElementById("red");
+      const green = document.getElementById("green");
+      const yellow = document.getElementById("yellow");
+
+      // Agregar evento de click para cambiar el color al negro
+      blue.addEventListener("click", function () {
+        this.style.backgroundColor = "black";
+      });
+      red.addEventListener("click", function () {
+        this.style.backgroundColor = "black";
+      });
+      green.addEventListener("click", function () {
+        this.style.backgroundColor = "black";
+      });
+      yellow.addEventListener("click", function () {
+        this.style.backgroundColor = "black";
+      });
+    </script>
+  </body>
+</html>
